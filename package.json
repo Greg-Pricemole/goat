@@ -11,8 +11,12 @@
   "license": "ISC",
   "dependencies": {
     "chrome-paths": "^1.0.1",
+    "date-and-time": "^1.0.0",
+    "dotenv": "^8.2.0",
     "ghost-cursor": "^1.1.5",
+    "is-odd": "^3.0.1",
     "puppeteer-core": "^9.0.0",
+    "random-int": "^2.0.1",
     "robotjs": "^0.6.0",
     "xvfb": "^0.4.0"
   }
