@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer-core');
+const puppeteer = require('puppeteer-extra');
 const chromePaths = require('chrome-paths');
 const { createCursor } = require('ghost-cursor')
 const randomInt = require('random-int')
@@ -44,6 +44,8 @@ console.log(portSelection,'port selection')
 
 ;(async () => {
 
+  await delay(30000)
+
 //     // xvfb install
 //     var xvfb = new Xvfb({
 //         silent: true,
@@ -70,12 +72,13 @@ console.log(portSelection,'port selection')
   await page.goto('https://www.bing.com/')
   try {
   for (i = 0; i < randomPagesToScrape.length; i++) {
-    await page.goto(randomPagesToScrape[i], {timeout: 60000})
-    let textContents = await page.$('[data-qa="product_display_name_text"]', {timeout: 60000})
+    await page.goto(randomPagesToScrape[i], {timeout: 90000})
+    let textContents = await page.$('[data-qa="product_display_name_text"]', {timeout: 90000})
     console.log(textContents)
     waitTime = randomInt(15000,30000)
     console.log(waitTime,'is total wait time for',i,'item')
     await delay(waitTime)
+    // if (i == 30) {i = }
   }
 } catch (err) {
   console.log(err,'->',i,'->',date.format(new Date(), 'YYYY/MM/DD HH:mm:ss'))
