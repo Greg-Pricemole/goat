@@ -1,0 +1,8 @@
+version: '3' # version of docker
+services: #images and containers to deploy
+  web: #can name this whatever you want? will be name of deployment
+    build: . #where the yaml file is
+    image: bypass:5.0 # image to fetch or get from docker hub
+    scale: 5 #scales containers to every size
+    expose: # its either this or "port" doesnt work with port
+      - "8080"

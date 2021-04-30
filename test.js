@@ -15,7 +15,6 @@ randomTyping = async (page, wordsToType, selector) => {
 
     // const n = 5 //get the first 5 items
 
-
       slice1 = randomInt(1,arr.length-3)
       slice2 = randomInt(slice1, arr.length-2)
       slice3 = randomInt(slice2, arr.length-1)
@@ -41,6 +40,7 @@ randomTyping = async (page, wordsToType, selector) => {
     await typing(arrSlice3,randomInt(200,400))
     await typing(arrSlice4,randomInt(200,1000))
     //   console.log(slice3)
+
 
     // const newArray = arr.slice(0, )
 

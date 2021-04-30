@@ -15,7 +15,6 @@
     "dotenv": "^8.2.0",
     "ghost-cursor": "^1.1.5",
     "is-odd": "^3.0.1",
-    "puppeteer": "^9.0.0",
     "puppeteer-core": "^9.0.0",
     "puppeteer-extra": "^3.1.18",
     "random-int": "^2.0.1",
